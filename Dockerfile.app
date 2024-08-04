@@ -12,13 +12,15 @@ COPY . /builder
 WORKDIR /builder
 RUN --mount=type=cache,id=s/260bdcd2-c9d7-4d87-968e-2913aae34a6e-/pnpm/store,target=/pnpm/store pnpm install --frozen-lockfile
 RUN pnpm -C app run build
-RUN pnpm --filter=app --prod deploy /app
+RUN pnpm --filter=app --prod deploy ./app/packages
 
 
 # Main App
 FROM base AS app
-COPY --from=build /builder/app/build /app/build
-COPY --from=build /builder/app/package.json /app/build
 WORKDIR /app
+COPY --from=build /builder/app/packages .
+COPY --from=build /builder/app/build .
+COPY --from=build /builder/app/package.json .
+
 EXPOSE 3000
-CMD ["node", "/app/build/index.js"]
+CMD ["node", "/app/index.js"]

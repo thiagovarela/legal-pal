@@ -20,12 +20,21 @@ importers:
       '@lucia-auth/adapter-postgresql':
         specifier: ^3.1.2
         version: 3.1.2(lucia@3.2.0)(pg@8.12.0)(postgres@3.4.4)
+      '@sveltejs/adapter-node':
+        specifier: ^5.2.0
+        version: 5.2.0(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))
       '@temporalio/client':
         specifier: ^1.10.3
         version: 1.10.3
+      '@trpc/client':
+        specifier: ^10.45.2
+        version: 10.45.2(@trpc/server@10.45.2)
       '@trpc/server':
         specifier: ^10.45.2
         version: 10.45.2
+      cookie:
+        specifier: ^0.6.0
+        version: 0.6.0
       kysely:
         specifier: ^0.27.4
         version: 0.27.4
@@ -41,6 +50,9 @@ importers:
       oslo:
         specifier: ^1.2.1
         version: 1.2.1
+      set-cookie-parser:
+        specifier: ^2.7.0
+        version: 2.7.0
       trpc-sveltekit:
         specifier: ^3.6.2
         version: 3.6.2(@sveltejs/adapter-node@5.2.0(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3))))(@trpc/client@10.45.2(@trpc/server@10.45.2))(@trpc/server@10.45.2)(ws@8.18.0)
@@ -54,9 +66,6 @@ importers:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
         version: 3.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))
-      '@sveltejs/adapter-node':
-        specifier: ^5.2.0
-        version: 5.2.0(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))
       '@sveltejs/kit':
         specifier: ^2.0.0
         version: 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3))
@@ -69,9 +78,6 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.13
         version: 0.5.13(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@22.0.0)(typescript@5.5.4)))
-      '@trpc/client':
-        specifier: ^10.45.2
-        version: 10.45.2(@trpc/server@10.45.2)
       '@types/eslint':
         specifier: ^9.6.0
         version: 9.6.0
@@ -2324,8 +2330,8 @@ packages:
   serialize-javascript@6.0.2:
     resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
 
-  set-cookie-parser@2.6.0:
-    resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
+  set-cookie-parser@2.7.0:
+    resolution: {integrity: sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -3277,7 +3283,7 @@ snapshots:
       magic-string: 0.30.11
       mrmime: 2.0.0
       sade: 1.8.1
-      set-cookie-parser: 2.6.0
+      set-cookie-parser: 2.7.0
       sirv: 2.0.4
       svelte: 4.2.18
       tiny-glob: 0.2.9
@@ -4734,7 +4740,7 @@ snapshots:
     dependencies:
       randombytes: 2.1.0
 
-  set-cookie-parser@2.6.0: {}
+  set-cookie-parser@2.7.0: {}
 
   shebang-command@2.0.0:
     dependencies:
