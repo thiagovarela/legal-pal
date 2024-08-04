@@ -1,0 +1,28 @@
+{
+  "name": "@gabo/workflows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",  
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write ./src ",
+    "worker:default": "pnpx tsx --env-file .env ./src/default-worker.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gabo/schemas": "workspace:*",
+    "@temporalio/activity": "^1.10.2",
+    "@temporalio/worker": "^1.10.2",
+    "@temporalio/workflow": "^1.10.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "kysely": "^0.27.4",
+    "kysely-postgres-js": "^2.0.0",
+    "oslo": "^1.2.1",
+    "postgres": "^3.4.4",
+    "ts-node": "^10.9.2"
+  }
+}

@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'remixicon/fonts/remixicon.css';
+
+html {
+    @apply bg-white;
+}
+html, body {
+    @apply h-full;
+}

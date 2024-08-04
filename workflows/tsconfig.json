@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "module": "esnext",
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "sourceMap": true,
+      "strict": true,
+      "target": "esnext",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "noImplicitAny": false,
+      "outDir": "./build",
+    },    
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules"]
+  }
