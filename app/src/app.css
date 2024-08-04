@@ -4,8 +4,9 @@
 @import 'remixicon/fonts/remixicon.css';
 
 html {
-    @apply bg-white;
+	@apply bg-white;
 }
-html, body {
-    @apply h-full;
+html,
+body {
+	@apply h-full;
 }

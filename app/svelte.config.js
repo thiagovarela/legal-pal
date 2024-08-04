@@ -14,7 +14,7 @@ const config = {
 		adapter: adapter()
 	},
 	vitePlugin: {
-		exclude: ["@protobufjs", "protobufjs", "kysely"]		
+		exclude: ['@protobufjs', 'protobufjs', 'kysely']
 	}
 };
 

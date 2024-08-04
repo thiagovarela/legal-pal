@@ -10,8 +10,8 @@
 
 	<footer class="bg-slate-50">
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-			<div class="py-16">		
-				<i class="flex justify-center ri-scales-line ri-3x"></i>		
+			<div class="py-16">
+				<i class="ri-scales-line ri-3x flex justify-center"></i>
 				<nav class="mt-10 text-sm" aria-label="quick links">
 					<div class="-my-1 flex justify-center gap-x-6">
 						<a
@@ -31,7 +31,10 @@
 				class="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between"
 			>
 				<div class="flex gap-x-6">
-					<a class="group" aria-label="LegalPal on Twitter/X" href="https://www.twitter.com/thiagovarela"
+					<a
+						class="group"
+						aria-label="LegalPal on Twitter/X"
+						href="https://www.twitter.com/thiagovarela"
 						><svg
 							class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
 							aria-hidden="true"
@@ -40,7 +43,10 @@
 								d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"
 							></path></svg
 						></a
-					><a class="group" aria-label="LegalPal on GitHub" href="https://www.github.com/thiagovarela"
+					><a
+						class="group"
+						aria-label="LegalPal on GitHub"
+						href="https://www.github.com/thiagovarela"
 						><svg
 							class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
 							aria-hidden="true"

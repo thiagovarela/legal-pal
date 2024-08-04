@@ -7,7 +7,9 @@ const proxy = proxyActivities<typeof activities>({
 });
 
 export async function signUpWf(input: SignUpInput): Promise<string> {
-	return await proxy.signUp(input);
+	const user = await proxy.signUp(input);
+	await proxy.createOrganization({user_id: user.id, name: `${user.first_name}'s Personal`})
+	return user.id
 }
 
 export async function loginWf(input: LoginInput): Promise<string> {

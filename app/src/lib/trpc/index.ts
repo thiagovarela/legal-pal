@@ -3,22 +3,22 @@ import { initTRPC, TRPCError } from '@trpc/server';
 import { ZodError } from 'zod';
 import { WorkflowFailedError } from '@temporalio/client';
 
-const t = initTRPC.context<Context>().create({	
-		errorFormatter(opts) {			
-		  const { shape, error } = opts;
-		  console.log(error.cause instanceof WorkflowFailedError)
-		  return {
+const t = initTRPC.context<Context>().create({
+	errorFormatter(opts) {
+		const { shape, error } = opts;
+		console.log(error.cause instanceof WorkflowFailedError);
+		return {
 			...shape,
 			data: {
-			  ...shape.data,
-			  workflowError: error.cause instanceof WorkflowFailedError ? error.cause : null,
-			  zodError:
-				error.code === 'BAD_REQUEST' && error.cause instanceof ZodError
-				  ? error.cause.flatten()
-				  : null,
-			},
-		  };
-		},	  
+				...shape.data,
+				workflowError: error.cause instanceof WorkflowFailedError ? error.cause?.cause?.failure?.cause : null, // geez, do something clever later
+				zodError:
+					error.code === 'BAD_REQUEST' && error.cause instanceof ZodError
+						? error.cause.flatten()
+						: null
+			}
+		};
+	}
 });
 
 export const auth = t.middleware(async ({ next, ctx }) => {

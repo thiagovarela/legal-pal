@@ -164,7 +164,7 @@
 						</li>
 					</ul>
 					<a
-						class="group mt-8 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm text-white ring-1 ring-slate-700 hover:ring-slate-500 focus:outline-none focus-visible:outline-white active:text-slate-400 active:ring-slate-700"						
+						class="group mt-8 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm text-white ring-1 ring-slate-700 hover:ring-slate-500 focus:outline-none focus-visible:outline-white active:text-slate-400 active:ring-slate-700"
 						aria-label="Get started with the Starter plan for $9"
 						href="/register">Get started</a
 					>
@@ -304,7 +304,7 @@
 						</li>
 					</ul>
 					<a
-						class="group mt-8 inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-blue-50 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:bg-blue-200 active:text-slate-600"						
+						class="group mt-8 inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-blue-50 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:bg-blue-200 active:text-slate-600"
 						aria-label="Get started with the Small business plan for $15"
 						href="/register">Get started</a
 					>
@@ -406,7 +406,7 @@
 						</li>
 					</ul>
 					<a
-						class="group mt-8 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm text-white ring-1 ring-slate-700 hover:ring-slate-500 focus:outline-none focus-visible:outline-white active:text-slate-400 active:ring-slate-700"						
+						class="group mt-8 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm text-white ring-1 ring-slate-700 hover:ring-slate-500 focus:outline-none focus-visible:outline-white active:text-slate-400 active:ring-slate-700"
 						aria-label="Get started with the Enterprise plan for $39"
 						href="/register">Get started</a
 					>

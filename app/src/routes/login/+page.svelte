@@ -23,7 +23,7 @@
 	>
 		<div class="mx-auto w-full max-w-sm lg:w-96">
 			<div>
-				<i class="flex ri-scales-line ri-2x text-blue-600"></i> 
+				<i class="ri-scales-line ri-2x flex text-blue-600"></i>
 				<h2 class="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
 					Sign in to your account
 				</h2>
@@ -74,16 +74,15 @@
 
 						<div class="flex items-center justify-between">
 							<div class="text-sm leading-6">
-								<a
-									href="./forgot-password"
-									class="font-semibold text-blue-600 hover:text-blue-500">Forgot password?</a
+								<a href="./forgot-password" class="font-semibold text-blue-600 hover:text-blue-500"
+									>Forgot password?</a
 								>
 							</div>
 						</div>
 
 						<div>
 							<button
-								type="submit"								
+								type="submit"
 								class="flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
 								>Sign in</button
 							>

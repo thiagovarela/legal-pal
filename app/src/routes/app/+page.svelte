@@ -1,8 +1,9 @@
-<script lang="ts">		
-    import type { LayoutData } from './$types';
-	
-	export let data: LayoutData;    
+<script lang="ts">
+	import type { LayoutData } from './$types';
+
+	export let data: LayoutData;
 </script>
+
 <div>
 	<!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
 	<div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
@@ -61,7 +62,7 @@
 					class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-2 ring-1 ring-white/10"
 				>
 					<div class="flex h-16 shrink-0 items-center">
-						<i class="flex ri-scales-line ri-2x text-blue-600"></i> 
+						<i class="ri-scales-line ri-2x flex text-blue-600"></i>
 					</div>
 					<nav class="flex flex-1 flex-col">
 						<ul role="list" class="flex flex-1 flex-col gap-y-7">
@@ -261,7 +262,7 @@
 		<!-- Sidebar component, swap this element with another sidebar if you like -->
 		<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6">
 			<div class="flex h-16 shrink-0 items-center">
-				<i class="flex ri-scales-line ri-2x text-blue-600"></i> 
+				<i class="ri-scales-line ri-2x flex text-blue-600"></i>
 			</div>
 			<nav class="flex flex-1 flex-col">
 				<ul role="list" class="flex flex-1 flex-col gap-y-7">

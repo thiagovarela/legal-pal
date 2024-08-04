@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gen": "kysely-codegen --out-file ./db.ts",
+    "gen": "kysely-codegen --singular --out-file ./db.ts",
     "migrate": "dbmate migrate"
   },
   "keywords": [],

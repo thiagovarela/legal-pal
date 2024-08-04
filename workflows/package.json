@@ -2,7 +2,7 @@
   "name": "@gabo/workflows",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",  
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "format": "prettier --write ./src ",
@@ -15,7 +15,8 @@
     "@gabo/schemas": "workspace:*",
     "@temporalio/activity": "^1.10.2",
     "@temporalio/worker": "^1.10.2",
-    "@temporalio/workflow": "^1.10.2"
+    "@temporalio/workflow": "^1.10.2",
+    "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",

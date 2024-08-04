@@ -18,7 +18,7 @@
 │   ├── db.ts (database generated introspection)
 │   ├── input.ts (trpc input also shared with temporal activities and workflows)
 │   ├── migrations
-└── workflows    
+└── workflows (so far nodejs based workers)   
     ├── src    
     │   ├── default (default worker related code)
     │   │   ├── activities.ts
