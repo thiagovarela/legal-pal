@@ -13,9 +13,9 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
 	},
-	vitePlugin: {
-		exclude: ['@protobufjs', 'protobufjs', 'kysely']
-	}
+	// vitePlugin: {
+	// 	exclude: ['@protobufjs', 'protobufjs', 'kysely', '@temporalio/client']
+	// }
 };
 
 export default config;

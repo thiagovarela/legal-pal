@@ -13,13 +13,41 @@ importers:
         version: 3.3.3
 
   app:
-    devDependencies:
+    dependencies:
       '@gabo/schemas':
         specifier: workspace:*
         version: link:../schemas
       '@lucia-auth/adapter-postgresql':
         specifier: ^3.1.2
         version: 3.1.2(lucia@3.2.0)(pg@8.12.0)(postgres@3.4.4)
+      '@temporalio/client':
+        specifier: ^1.10.3
+        version: 1.10.3
+      '@trpc/server':
+        specifier: ^10.45.2
+        version: 10.45.2
+      kysely:
+        specifier: ^0.27.4
+        version: 0.27.4
+      kysely-postgres-js:
+        specifier: ^2.0.0
+        version: 2.0.0(kysely@0.27.4)(postgres@3.4.4)
+      lucia:
+        specifier: ^3.2.0
+        version: 3.2.0
+      nanoid:
+        specifier: ^5.0.7
+        version: 5.0.7
+      oslo:
+        specifier: ^1.2.1
+        version: 1.2.1
+      trpc-sveltekit:
+        specifier: ^3.6.2
+        version: 3.6.2(@sveltejs/adapter-node@5.2.0(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3))))(@trpc/client@10.45.2(@trpc/server@10.45.2))(@trpc/server@10.45.2)(ws@8.18.0)
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
+    devDependencies:
       '@playwright/test':
         specifier: ^1.28.1
         version: 1.45.3
@@ -41,15 +69,9 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.13
         version: 0.5.13(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@22.0.0)(typescript@5.5.4)))
-      '@temporalio/client':
-        specifier: ^1.10.3
-        version: 1.10.3
       '@trpc/client':
         specifier: ^10.45.2
         version: 10.45.2(@trpc/server@10.45.2)
-      '@trpc/server':
-        specifier: ^10.45.2
-        version: 10.45.2
       '@types/eslint':
         specifier: ^9.6.0
         version: 9.6.0
@@ -68,21 +90,6 @@ importers:
       globals:
         specifier: ^15.0.0
         version: 15.8.0
-      kysely:
-        specifier: ^0.27.4
-        version: 0.27.4
-      kysely-postgres-js:
-        specifier: ^2.0.0
-        version: 2.0.0(kysely@0.27.4)(postgres@3.4.4)
-      lucia:
-        specifier: ^3.2.0
-        version: 3.2.0
-      nanoid:
-        specifier: ^5.0.7
-        version: 5.0.7
-      oslo:
-        specifier: ^1.2.1
-        version: 1.2.1
       postcss:
         specifier: ^8.4.38
         version: 8.4.40
@@ -110,9 +117,6 @@ importers:
       tailwindcss:
         specifier: ^3.4.4
         version: 3.4.7(ts-node@10.9.2(@types/node@22.0.0)(typescript@5.5.4))
-      trpc-sveltekit:
-        specifier: ^3.6.2
-        version: 3.6.2(@sveltejs/adapter-node@5.2.0(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3)))(svelte@4.2.18)(vite@5.3.5(@types/node@22.0.0)(terser@5.31.3))))(@trpc/client@10.45.2(@trpc/server@10.45.2))(@trpc/server@10.45.2)(ws@8.18.0)
       typescript:
         specifier: ^5.0.0
         version: 5.5.4
@@ -122,9 +126,6 @@ importers:
       vite:
         specifier: ^5.0.3
         version: 5.3.5(@types/node@22.0.0)(terser@5.31.3)
-      zod:
-        specifier: ^3.23.8
-        version: 3.23.8
 
   schemas:
     devDependencies:

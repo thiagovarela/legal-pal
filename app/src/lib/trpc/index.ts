@@ -5,8 +5,7 @@ import { WorkflowFailedError } from '@temporalio/client';
 
 const t = initTRPC.context<Context>().create({
 	errorFormatter(opts) {
-		const { shape, error } = opts;
-		console.log(error.cause instanceof WorkflowFailedError);
+		const { shape, error } = opts;		
 		return {
 			...shape,
 			data: {
@@ -27,5 +26,20 @@ export const auth = t.middleware(async ({ next, ctx }) => {
 });
 
 export const router = t.router;
-export const publicProcedure = t.procedure;
+export const publicProcedure = t.procedure.use(async (opts) => {
+	const start = Date.now();
+   
+	const result = await opts.next();
+   
+	const durationMs = Date.now() - start;
+	const meta = { path: opts.path, type: opts.type, durationMs };
+   
+	result.ok
+	  ? console.log('OK request timing:', meta)
+	  : console.error('Non-OK request timing', meta);
+
+	  console.log(result)
+   
+	return result;
+  });
 export const protectedProcedure = t.procedure.use(auth);

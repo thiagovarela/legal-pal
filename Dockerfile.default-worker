@@ -1,0 +1,15 @@
+FROM node:22-slim AS base
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
+# satisfies build time check of variable
+ENV DATABASE_URL="postgres://l:l@l/l"  
+ENV TEMPORAL_URL="http://localhost"
+
+FROM base AS build
+COPY . /worker
+WORKDIR /worker
+RUN --mount=type=cache,id=s/8fbb312f-4dd5-4c73-b006-06fa2ec03995-/pnpm/store,target=/pnpm/store pnpm install --frozen-lockfile
+
+CMD ["pnpx", "tsx", "/worker/workflows/src/default-worker.ts"]

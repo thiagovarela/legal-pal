@@ -5,15 +5,19 @@ import { nanoid } from 'nanoid/non-secure';
 import { SignUpInput, LoginInput } from '@gabo/schemas/input';
 
 export const authRouter = router({
-	signUp: publicProcedure.input(SignUpInput).mutation(async ({ input }) => {
+	signUp: publicProcedure.input(SignUpInput).mutation(async ({ input }) => {		
+		console.log("aaaa 1")
 		const client = await getClient();
+		console.log("aaaa 2")
 		const handle = await client.workflow.start('signUpWf', {
 			workflowId: `sign-up-with-email-${nanoid()}`,
 			args: [input],
 			taskQueue: 'default',
 			workflowRunTimeout: '5 seconds'
 		});
+		console.log("aaaa 4")
 		const userId = await handle.result();
+		console.log("aaaa 5")
 		return { userId };
 	}),
 	login: publicProcedure.input(LoginInput).mutation(async ({ input, ctx }) => {

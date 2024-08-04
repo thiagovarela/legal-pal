@@ -48,7 +48,7 @@
 			<div class="mt-10">
 				<div>
           {#if workflowError}
-          <div class="rounded-md bg-red-50 p-4 mb-2">
+          <div class="rounded-md bg-red-50 p-4">
             <div class="flex">
               <div class="flex-shrink-0">
                 <i class="ri-error-warning-line"></i>
