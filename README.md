@@ -2,6 +2,7 @@
 
 ## Structure
 
+```
 ├── app
 │   ├── src
 │   │   ├── lib
@@ -23,3 +24,4 @@
     │   │   ├── activities.ts
     │   │   └── workflows.ts
     │   └── default-worker.ts (worker init)
+```
